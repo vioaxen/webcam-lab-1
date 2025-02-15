@@ -75,9 +75,9 @@ h1 {
 .lf-fact-left, .lf-fact-right {
     width: 100%;
     display: flex;
-    flex-direction: column; /* Изменено на column */
-    align-items: flex-start; /* Выравнивание по левому краю */
-    margin-bottom: 20px; /* Отступ между фактами */
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(57, 62, 70, 0.3);
 }
@@ -88,7 +88,7 @@ h1 {
 }
 
 .lf-fact-right {
-    align-items: flex-end; /* Выравнивание по правому краю */
+    align-items: flex-end;
 }
 
 h2 {
