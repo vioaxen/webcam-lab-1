@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background: #393E46;
+    color: #EEEEEE;
+    font-family: 'Montserrat',sans-serif ;
+}
+body h1 {
+    font-size: 36px;
+}
+
+header {
+    background: #393E46;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+li {
+    margin-right: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+header a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+}
+
+/*
+ * Факты
+ */
+
+#fun-facts {
+    display: flex;
+    justify-content: center;
+    background: #d8ccbe;
+    color: #393E46;
+}
+
+.ff-content {
+    width: 100%;
+    padding-right: 60px;
+    padding-left: 60px;
+    max-width: 1920px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.list-facts {
+    display: flex;
+    flex-direction: column;
+}
+
+.lf-fact-left, .lf-fact-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Изменено на column */
+    align-items: flex-start; /* Выравнивание по левому краю */
+    margin-bottom: 20px; /* Отступ между фактами */
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(57, 62, 70, 0.3);
+}
+
+.lf-fact-left:last-child,
+.lf-fact-right:last-child {
+    border-bottom: none;
+}
+
+.lf-fact-right {
+    align-items: flex-end; /* Выравнивание по правому краю */
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    flex: 1;
+    max-width: 80%;
+}
+
+
+/*
+ * Обзор фильма
+ */
+
+#movie-review {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1920px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin: 0 auto;
+
+}
+
+
+.movie-container {
+    padding-top: 45px;
+}
+
+.movie-container img {
+    width: 600px;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.5);
+
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    padding-right: 60px;
+}
+
+.text-content h1 {
+    margin-bottom: 10px;
+}
+
+.text-content .movie-head .mh-info {
+    display: flex;
+}
+
+
+.text-content .movie-head ul li{
+    color: rgba(238, 238, 238, 0.5);
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.text-content .genres .rounded-border {
+    border: 1px solid rgba(238, 238, 238, 0.5);
+    border-radius: 15px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.text-content .genres ul li{
+    color: rgba(238, 238, 238, 0.5);
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.text-content .description {
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media (max-width: 768px) {
+    #movie-review {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .movie-container {
+        padding-top: 20px;
+    }
+
+    .movie-container img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .text-content {
+        padding-right: 0;
+        padding-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-content h1 {
+        font-size: 24px;
+    }
+
+    .text-content .movie-head ul li,
+    .text-content .genres ul li {
+        font-size: 14px;
+    }
+
+    .text-content .description {
+        font-size: 16px;
+
+    }
+}
+
+@media (max-width: 480px) {
+    #movie-review {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin: 0 auto;
+    }
+
+    .movie-container img {
+        max-width: 100%;
+    }
+
+    .text-content h1 {
+        font-size: 20px;
+    }
+
+
+    .text-content .movie-head ul li,
+    .text-content .genres ul li {
+        font-size: 12px;
+    }
+
+    .text-content .description {
+        font-size: 14px;
+    }
+}
+
