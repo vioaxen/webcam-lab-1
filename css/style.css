@@ -116,7 +116,6 @@ p {
     padding-right: 60px;
     padding-left: 60px;
     margin: 0 auto;
-
 }
 
 
@@ -174,8 +173,6 @@ p {
     text-justify: inter-word;
 }
 
-
-
 #quotes {
     margin: 0 auto;
     padding-left: 60px;
@@ -198,7 +195,52 @@ p {
     font-size: 30px;
 }
 
-@media (max-width: 768px) {
+#matches {
+    display: block;
+}
+
+#matches h2 {
+    text-align: left; /* Оставляем заголовок слева */
+    margin-left: 60px;
+}
+
+.matches-table {
+    width: 60%; /* Настроить ширину */
+    margin: 0 auto; /* Центрирование таблицы */
+    border-collapse: collapse;
+}
+
+.matches-table tbody {
+    text-align: center;
+}
+
+.matches-table th, .matches-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    display: flex;
+    justify-content: center; /* Центрирует содержимое по горизонтали */
+    align-items: center; /* Центрирует по вертикали */
+    text-align: center;
+    padding: 0;
+    background: #393E46;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column; /* Размещает элементы в столбец */
+    align-items: center; /* Центрирует элементы по центру */
+}
+
+p {
+    font-size: 14px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1050px) {
     #movie-review {
         flex-direction: column;
         align-items: center;
@@ -236,6 +278,24 @@ p {
         font-size: 16px;
 
     }
+
+    #quotes .container {
+        flex-direction: column;
+    }
+
+    #quotes .carousel {
+        width: 100%;
+    }
+
+    #quotes .quotes-list {
+        flex-direction: column;
+    }
+
+    #quotes .quote-item {
+        width: 100%;
+    }
+
+
 }
 
 @media (max-width: 480px) {
@@ -261,6 +321,14 @@ p {
 
     .text-content .description {
         font-size: 14px;
+    }
+
+    #quotes h2 {
+        font-size: 1.5em;
+    }
+
+    #quotes .quote-text {
+        font-size: 1em;
     }
 }
 
